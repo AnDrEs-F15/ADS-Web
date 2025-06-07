@@ -1,7 +1,7 @@
 {
   "name": "berry-material-react-js",
   "version": "4.0.1",
-  "homepage": "AnDrEs-F15.githu.io/ADS-Web",
+  "homepage": "https://AnDrEs-F15.github.io/ADS-Web",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.14.0",
