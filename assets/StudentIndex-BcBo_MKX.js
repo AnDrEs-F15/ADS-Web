@@ -1,1 +1,0 @@
-import{j as t,M as a}from"./index-ClgyEdRT.js";import{G as e}from"./GlobalModal-TfFSBmGf.js";const r=()=>t.jsx(t.Fragment,{children:t.jsx(a,{title:"Estudiantes",children:t.jsx(e,{buttonTitle:"Crear Estudiante",buttonColor:"secondary",buttonBackground:"secondary",modalTitle:"Creacion de estudiante",actionTitleButton:"Guardar",children:"Hola"})})});export{r as default};

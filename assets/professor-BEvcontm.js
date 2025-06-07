@@ -1,0 +1,1 @@
+import{a0 as a}from"./index-DoAxHfkR.js";const n=()=>a.get("/api/professor").then(o=>o==null?void 0:o.data),s=o=>(console.log("Send"),a.post("/api/professor",o).then(t=>t==null?void 0:t.data));export{n as g,s as p};
