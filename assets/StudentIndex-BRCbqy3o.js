@@ -1,0 +1,1 @@
+import{j as t,M as a}from"./index-jX8MlIS8.js";import{G as e}from"./GlobalModal-Bip8a0i_.js";const r=()=>t.jsx(t.Fragment,{children:t.jsx(a,{title:"Estudiantes",children:t.jsx(e,{buttonTitle:"Crear Estudiante",buttonColor:"secondary",buttonBackground:"secondary",modalTitle:"Creacion de estudiante",actionTitleButton:"Guardar",children:"Hola"})})});export{r as default};

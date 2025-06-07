@@ -1,0 +1,1 @@
+import{$ as o}from"./index-jX8MlIS8.js";const n=()=>o.get("/api/course").then(t=>t==null?void 0:t.data),p=()=>o.get("/api/course/active").then(t=>t.data),u=t=>o.post("/api/course",t).then(a=>a==null?void 0:a.data);export{n as a,p as g,u as p};
