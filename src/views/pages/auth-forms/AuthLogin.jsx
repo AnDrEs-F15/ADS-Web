@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 // material-ui
 import { useTheme } from '@mui/material/styles';
-import { Button, FormControl, IconButton, InputAdornment, InputLabel, OutlinedInput, Typography, Box } from '@mui/material';
+import { Button, FormControl, IconButton, InputAdornment, InputLabel, OutlinedInput, Typography, Box, Divider } from '@mui/material';
 
 // project imports
 import AnimateButton from 'ui-component/extended/AnimateButton';
@@ -12,13 +12,14 @@ import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import { useAuthLogin } from './hooks/useAuthLogin';
 import { useSelector } from 'react-redux';
-import { Navigate } from 'react-router';
+import { Navigate, useNavigate } from 'react-router';
 
 // ===============================|| JWT - LOGIN (con React Hook Form) ||=============================== //
 
 export default function AuthLogin() {
   const auth = useSelector((state) => state.auth);
   const theme = useTheme();
+  const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
   const { onSubmit, register, errors } = useAuthLogin();
   if (auth?.token) return <Navigate to="/" replace />;
@@ -67,6 +68,12 @@ export default function AuthLogin() {
         <AnimateButton>
           <Button color="secondary" fullWidth size="large" type="submit" variant="contained">
             Iniciar sesión
+          </Button>
+        </AnimateButton>
+        <Divider sx={{ my: 2 }} />
+        <AnimateButton>
+          <Button onClick={() => navigate('/form-register')} color="secondary" fullWidth size="large" variant="contained">
+            Ir al formulario
           </Button>
         </AnimateButton>
       </Box>
